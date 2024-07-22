@@ -16,10 +16,10 @@ def stat_calc(numbers):
     max_val = max(numbers)
     min_val = min(numbers)
 
-    # Calculate mean using a standard function instead of a lambda expression for clarity
+    # Calculate mean 
     mean_val = sum(numbers) / len(numbers)
 
-    # Calculate variance using a standard function instead of a lambda expression for clarity
+    # Calculate variance 
     variance_val = sum((x - mean_val) ** 2 for x in numbers) / len(numbers)
 
     return max_val, min_val, mean_val, variance_val
